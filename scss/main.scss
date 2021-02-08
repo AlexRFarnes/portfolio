@@ -1,4 +1,5 @@
 @import "variables";
+@import "utilities";
 
 //  General Sytles
 *,
@@ -40,4 +41,73 @@ h6 {
 
 img {
   width: 100%;
+}
+
+// Header
+.header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+
+    &__content {
+      padding-top: 20%;
+      text-align: center;
+    }
+    &__main {
+      font-size: 6rem;
+      line-height: 1.2;
+      font-weight: 300;
+    }
+  }
+  &-inner {
+  }
+}
+
+// Logo
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  // height: 7rem;
+  // width: 10rem;
+  padding: 1rem 0rem;
+  font-size: 2rem;
+}
+
+// Nav
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 1rem 1.5rem;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.3s;
+
+    &:hover,
+    &:active {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
 }
