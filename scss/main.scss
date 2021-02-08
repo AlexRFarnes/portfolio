@@ -134,6 +134,7 @@ img {
     .techs {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      font-size: 2rem;
 
       li {
         line-height: 2;

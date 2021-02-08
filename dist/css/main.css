@@ -144,7 +144,8 @@ img {
 
 .home-b .techs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 2rem; }
   .home-b .techs li {
     line-height: 2; }
   .home-b .techs__title {
