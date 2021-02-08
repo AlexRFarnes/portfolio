@@ -35,6 +35,30 @@ input[class^="btn-"]:hover {
 .text-center {
   text-align: center; }
 
+.py-1 {
+  padding: 1.6rem 0; }
+
+.py-2 {
+  padding: 2.2rem 0; }
+
+.py-3 {
+  padding: 4.8rem 0; }
+
+.py-4 {
+  padding: 6.4rem 0; }
+
+.my-1 {
+  margin: 1.6rem 0; }
+
+.my-2 {
+  margin: 2.2rem 0; }
+
+.my-3 {
+  margin: 4.8rem 0; }
+
+.my-4 {
+  margin: 6.4rem 0; }
+
 *,
 *::before,
 *::after {
@@ -108,3 +132,28 @@ img {
       border-color: #ccc; }
     .main-nav__link:link.current, .main-nav__link:visited.current {
       border-color: #ffbc00; }
+
+.home-a .specials {
+  margin-top: 4.2rem;
+  display: grid;
+  grid-gap: 1.6rem;
+  grid-template-columns: repeat(4, 1fr); }
+  .home-a .specials .fas {
+    color: #ffbc00;
+    padding-bottom: 0.6rem; }
+
+.home-b .techs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .home-b .techs li {
+    line-height: 2; }
+  .home-b .techs__title {
+    font-size: 2rem;
+    font-weight: 700; }
+
+.home-b .tech {
+  padding: 3rem 0; }
+  .home-b .tech:nth-child(odd) {
+    background: #f4f4f4; }
+  .home-b .tech:nth-child(even) {
+    background: #ccc; }

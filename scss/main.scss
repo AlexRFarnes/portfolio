@@ -111,3 +111,46 @@ img {
     }
   }
 }
+
+// HOME SECTIONS
+// Section A
+
+.home {
+  &-a {
+    .specials {
+      margin-top: 4.2rem;
+      display: grid;
+      grid-gap: 1.6rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.6rem;
+      }
+    }
+  }
+
+  &-b {
+    .techs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        line-height: 2;
+      }
+      &__title {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+    .tech {
+      padding: 3rem 0;
+      &:nth-child(odd) {
+        background: $light-color;
+      }
+      &:nth-child(even) {
+        background: $medium-color;
+      }
+    }
+  }
+}
