@@ -1,5 +1,6 @@
 @import "variables";
 @import "utilities";
+@import "config";
 
 //  General Sytles
 *,
@@ -130,6 +131,7 @@ img {
     }
   }
 
+  // Section B
   &-b {
     .techs {
       display: grid;
@@ -152,6 +154,88 @@ img {
       &:nth-child(even) {
         background: $medium-color;
       }
+    }
+  }
+
+  // Section C
+  &-c {
+    .processes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2.4rem;
+      text-align: center;
+    }
+
+    .process {
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2rem;
+        background: $main-color;
+        color: set-text-color($main-color);
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        transition: all 0.7s;
+        text-align: center;
+      }
+      &-icon {
+        position: relative;
+        border-radius: 50%;
+        background: $dark-color;
+        color: set-text-color($dark-color);
+        width: 12rem;
+        height: 12rem;
+        line-height: 12rem;
+        text-align: center;
+        transition: all 0.7s;
+
+        &:hover {
+          background: $main-color;
+          transform: scale(1.1);
+
+          .process-step {
+            background: $dark-color;
+            color: set-text-color($dark-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+// FOOTER
+.main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+  }
+  &__social {
+  }
+  &__icon {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background: $main-color;
     }
   }
 }

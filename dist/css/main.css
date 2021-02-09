@@ -59,6 +59,21 @@ input[class^="btn-"]:hover {
 .my-4 {
   margin: 6.4rem 0; }
 
+.section-title {
+  font-size: 3.2rem;
+  display: block;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 6rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1.6rem; }
+
 *,
 *::before,
 *::after {
@@ -158,3 +173,63 @@ img {
     background: #f4f4f4; }
   .home-b .tech:nth-child(even) {
     background: #ccc; }
+
+.home-c .processes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.4rem;
+  text-align: center; }
+
+.home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  background: #ffbc00;
+  color: #fff;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  transition: all 0.7s;
+  text-align: center; }
+
+.home-c .process-icon {
+  position: relative;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  width: 12rem;
+  height: 12rem;
+  line-height: 12rem;
+  text-align: center;
+  transition: all 0.7s; }
+  .home-c .process-icon:hover {
+    background: #ffbc00;
+    transform: scale(1.1); }
+    .home-c .process-icon:hover .process-step {
+      background: #333;
+      color: #fff; }
+
+.main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  .main-footer__content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+  .main-footer__icon {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .main-footer__icon:not(:last-child) {
+      margin-right: 1rem; }
+    .main-footer__icon:hover {
+      background: #ffbc00; }
