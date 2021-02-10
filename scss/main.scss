@@ -62,6 +62,9 @@ img {
     }
   }
   &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 8.8rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -202,6 +205,44 @@ img {
           }
         }
       }
+    }
+  }
+}
+
+// ABOUT
+// About A
+
+.about {
+  &-a {
+    &__info {
+      display: grid;
+      grid-template-areas:
+        "bio-img bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+    }
+    &__bio-img {
+      grid-area: bio-img;
+    }
+    &__bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 1.2rem;
+    }
+
+    &__award-1 {
+      grid-area: aw1;
+    }
+    &__award-2 {
+      grid-area: aw2;
+    }
+    &__award-3 {
+      grid-area: aw3;
+    }
+
+    &__icon {
+      color: $main-color;
+      margin: 1rem;
     }
   }
 }

@@ -59,6 +59,22 @@ input[class^="btn-"]:hover {
 .my-4 {
   margin: 6.4rem 0; }
 
+.bg-main {
+  background: #ffbc00;
+  color: set-text-color(#ffbc00); }
+
+.bg-dark {
+  background: #333;
+  color: set-text-color(#333); }
+
+.bg-light {
+  background: #f4f4f4;
+  color: set-text-color(#f4f4f4); }
+
+.bg-medium {
+  background: #ccc;
+  color: set-text-color(#ccc); }
+
 .section-title {
   font-size: 3.2rem;
   display: block;
@@ -119,6 +135,11 @@ img {
     font-size: 6rem;
     line-height: 1.2;
     font-weight: 300; }
+
+.header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 8.8rem;
+  border-bottom: 3px solid #ffbc00; }
 
 .logo {
   color: #fff;
@@ -210,6 +231,32 @@ img {
     .home-c .process-icon:hover .process-step {
       background: #333;
       color: #fff; }
+
+.about-a__info {
+  display: grid;
+  grid-template-areas: "bio-img bio bio" "aw1 aw2 aw3";
+  grid-gap: 1.2rem; }
+
+.about-a__bio-img {
+  grid-area: bio-img; }
+
+.about-a__bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 1.2rem; }
+
+.about-a__award-1 {
+  grid-area: aw1; }
+
+.about-a__award-2 {
+  grid-area: aw2; }
+
+.about-a__award-3 {
+  grid-area: aw3; }
+
+.about-a__icon {
+  color: #ffbc00;
+  margin: 1rem; }
 
 .main-footer {
   background: #333;
