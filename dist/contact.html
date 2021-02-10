@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-inner" id="header-home">
+      <div class="container">
+        <nav class="main-nav">
+          <p class="logo">Alex R. Farnes</p>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="about.html" class="main-nav__link">About Me</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="work.html" class="main-nav__link">My Work</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="contact.html" class="main-nav__link current">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section A: Contact form -->
+    <section class="contact-a text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form>
+          <div class="contact-a__text-fields">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact-a__text-input contact-a__name-input"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="contact-a__text-input contact-a__subject-input"
+              placeholder="Subject"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact-a__text-input contact-a__email-input"
+              placeholder="Email Address"
+            />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              class="contact-a__text-input contact-a__phone-input"
+              placeholder="Phone Number"
+            />
+            <textarea
+              name="message"
+              id="message"
+              class="contact-a__text-input contact-a__message-input"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn--dark contact-a__btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact info -->
+    <section class="contact-b bg-dark py-3">
+      <div class="container">
+        <div class="contact-b__info">
+          <div class="contact-b__info-wrap">
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>alexrfarnes@gmail.com</p>
+          </div>
+          <div class="contact-b__info-wrap">
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(+886) 0978082200</p>
+          </div>
+          <div class="contact-b__info-wrap">
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Location</h3>
+            <p>Taiwan (Open to relocate)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section class="contact-c bg-main py-4 text-center">
+      <div class="container">
+        <p>Let's Work Together</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="main-footer__content container">
+        <p>Copyright &copy; 2021. All Rights Reserved</p>
+        <div class="main-footer__social">
+          <i class="fab fa-twitter main-footer__icon"></i>
+          <i class="fab fa-linkedin main-footer__icon"></i>
+          <i class="fab fa-github main-footer__icon"></i>
+          <i class="fab fa-medium main-footer__icon"></i>
+          <i class="fab fa-codepen main-footer__icon"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
