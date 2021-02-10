@@ -258,6 +258,46 @@ img {
   color: #ffbc00;
   margin: 1rem; }
 
+.about-b {
+  color: #fff; }
+  .about-b__skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.5rem; }
+  .about-b__skill {
+    border: 2px solid #ffbc00;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    transition: all 0.3s; }
+    .about-b__skill:hover {
+      transform: scale(1.1);
+      background: #ffbc00;
+      color: #333; }
+
+.about-c__testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.8rem; }
+
+.about-c__testimonial-list {
+  list-style: none;
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center; }
+
+.about-c__testimonial-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 0.8rem; }
+
+.about-c__testimonial-text {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem; }
+
 .main-footer {
   background: #333;
   color: #fff;
