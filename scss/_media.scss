@@ -1,0 +1,125 @@
+// Tablets and Smaller
+
+@media (max-width: 50em) {
+  .header {
+    &-home {
+      height: 48rem;
+
+      &__content {
+        padding-top: 8rem;
+      }
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 37.5em) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      padding: 1rem;
+    }
+  }
+
+  .header {
+    &-home {
+      height: 16rem;
+      border-bottom: 3px solid $main-color;
+      background: $bg-image no-repeat 20% 30% / cover;
+
+      &__content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 16rem;
+    }
+  }
+
+  .home-a__specials,
+  .home-b__techs,
+  .home-c__processes,
+  .about-b__skills,
+  .about-c__testimonials,
+  .contact-b__info,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  .home {
+    &-a {
+      &__special {
+        border-bottom: 1px solid $light-color;
+        padding-bottom: 1.6rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .about-a__info {
+    grid-template-areas:
+      "bio-img"
+      "bio"
+      "aw1"
+      "aw2"
+      "aw3";
+  }
+
+  .contact {
+    &-a__text-fields {
+      grid-template-areas:
+        "name"
+        "email"
+        "subject"
+        "phone"
+        "message";
+    }
+    &-b__info-wrap {
+      border-bottom: 1px solid $medium-color;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+
+      &:last-child {
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Footer
+  .main-footer {
+    height: 11rem;
+
+    &__content {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 11rem;
+      padding: 1.6rem;
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 37em) {
+  .header-home {
+    &__content {
+      padding-top: 4.8rem;
+    }
+  }
+}
+
+@media (max-height: 20em) {
+  .header-home {
+    &__main {
+      font-size: 2rem;
+    }
+  }
+}

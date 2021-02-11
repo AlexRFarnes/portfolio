@@ -122,7 +122,7 @@ img {
 
 .home {
   &-a {
-    .specials {
+    &__specials {
       margin-top: 4.2rem;
       display: grid;
       grid-gap: 1.6rem;
@@ -137,7 +137,7 @@ img {
 
   // Section B
   &-b {
-    .techs {
+    &__techs {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       font-size: 2rem;
@@ -150,7 +150,7 @@ img {
         font-weight: 700;
       }
     }
-    .tech {
+    &__tech {
       padding: 3rem 0;
       &:nth-child(odd) {
         background: $light-color;
@@ -163,14 +163,14 @@ img {
 
   // Section C
   &-c {
-    .processes {
+    &__processes {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 2.4rem;
       text-align: center;
     }
 
-    .process {
+    &__process {
       &-step {
         position: absolute;
         top: 0;
@@ -200,7 +200,7 @@ img {
           background: $main-color;
           transform: scale(1.1);
 
-          .process-step {
+          .home-c__process-step {
             background: $dark-color;
             color: set-text-color($dark-color);
           }
@@ -283,8 +283,6 @@ img {
         margin-top: 1.6rem;
         display: flex;
         align-items: center;
-      }
-      &-item {
       }
       &-img {
         width: 5rem;
@@ -372,8 +370,6 @@ img {
     height: 5rem;
     align-items: center;
   }
-  &__social {
-  }
   &__icon {
     border: 2px solid #fff;
     border-radius: 50%;
@@ -393,3 +389,6 @@ img {
     }
   }
 }
+
+// Import media queries
+@import "media";
