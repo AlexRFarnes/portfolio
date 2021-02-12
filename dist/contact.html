@@ -47,7 +47,7 @@
         <h2 class="section-title">Contact Me</h2>
         <div class="bottom-line"></div>
         <p class="lead">Here is how you can reach me</p>
-        <form>
+        <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
           <div class="contact-a__text-fields">
             <input
               type="text"
@@ -83,6 +83,9 @@
               class="contact-a__text-input contact-a__message-input"
               placeholder="Enter Message"
             ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
           </div>
           <button type="submit" class="btn--dark contact-a__btn">Submit</button>
         </form>
