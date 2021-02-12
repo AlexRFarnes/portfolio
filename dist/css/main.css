@@ -90,6 +90,9 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1.6rem; }
 
+.txt {
+  border-right: 0.2rem solid #7d7d7d; }
+
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
